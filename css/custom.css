@@ -46,7 +46,7 @@
 	--white-color			: #FFFFFF;
 	--divider-color			: #12223B30;
 	--dark-divider-color	: #FFFFFF20;
-	--overlay-color			: #00000066;
+	--overlay-color			: #00000022;
 	--error-color			: rgb(230, 87, 87);
 	--default-font			: "DM Sans", sans-serif;
 	--accent-font			: "Manrope", sans-serif;
@@ -301,7 +301,7 @@ body{
 	right: 0;
 	bottom: 0;
 	z-index: 1000;
-	background-color: var(--accent-color);
+	background-color: var(--primary-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -311,7 +311,7 @@ body{
 .loading{
 	height: 100px;
 	position: relative;
-	width: 100px;
+	width: 100%;
 	border-radius: 100%;
 }
 
@@ -714,7 +714,7 @@ header.main-header .header-sticky.active{
 	margin: 0 40px;
 	overflow: hidden;
 	border-radius: 40px;
-	background: url("../images/slider01a.jpg") no-repeat center center;
+	background: url("../images/Hero-bg-img.jpg") no-repeat center center;
 	background-size: cover;
 	padding: 300px 0 200px;
 	position: relative;
@@ -1682,6 +1682,7 @@ header.main-header .header-sticky.active{
 }
 
 .footer-logo{
+	width: 230px;
 	margin-bottom: 40px;
 }
 
