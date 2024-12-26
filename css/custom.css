@@ -391,7 +391,7 @@ body{
 }
 
 .section-title h2{
-	font-size: 56px;
+	font-size: 48px;
 	font-weight: 800;
 	line-height: 1.1em;
 	letter-spacing: -0.03em;
@@ -1102,12 +1102,6 @@ header.main-header .header-sticky.active{
 
 .why-choose-item .icon-box img{
 	max-width: 70px;
-}
-
-.why-choose-content{
-	border-bottom: 1px solid var(--divider-color);
-	margin-bottom: 30px;
-	padding-bottom: 30px;
 }
 
 .why-choose-content h3{
