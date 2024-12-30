@@ -42,7 +42,7 @@
 	--primary-color			: #0384CE;
 	--secondary-color		: #E9F7FE;
 	--text-color			: #667282;
-	--accent-color			: #FFB703;
+	--accent-color			: #0384ce;
 	--white-color			: #FFFFFF;
 	--divider-color			: #12223B30;
 	--dark-divider-color	: #FFFFFF20;
@@ -161,6 +161,7 @@ body{
 .reveal img{
     height: 100%;
     width: 100%;
+	border-radius: 60px;
     -o-object-fit: cover;
     object-fit: cover;
     -webkit-transform-origin: left;
@@ -249,6 +250,30 @@ body{
 
 .btn-default:hover::after{
 	width: 106%;
+}
+
+.btn-default:hover{
+	color: var(--primary-color);
+	border: 1px solid var(--accent-color);
+}
+
+.btn-default::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	bottom: 0;
+	background-image: url("../images/arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 24px;
+	height: 24px;
+	transform: translate(-30px, -50%);
+	transition: 0.4s ease-in-out;
+}
+
+.btn-default::after{
+	background: var(--white-color);
 }
 
 .btn-default.btn-highlighted{
@@ -1606,7 +1631,7 @@ header.main-header .header-sticky.active{
 	background: var(--primary-color);
 	border-radius: 40px;
 	text-align: center;
-	padding: 40px 40px 0;
+	padding: 40px 40px 20px;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -1644,6 +1669,7 @@ header.main-header .header-sticky.active{
 .contact-sidebar .contact-info-image img{
     filter: grayscale(0%);
     transition: all 0.3s ease-in-out;
+	border-radius: 12px;
 }
 
 .contact-sidebar:hover .contact-info-image img{
